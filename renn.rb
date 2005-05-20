@@ -156,6 +156,7 @@ class Game
             screen = SDL::setVideoMode(640,480,16,SDL::HWSURFACE) # | SDL::FULLSCREEN)
             SDL::WM::setCaption('Typespeed','typespeed')
             SDL::Mouse::hide
+            screen.toggleFullScreen
 
             SDL::TTF.init
             font = SDL::TTF.open('nihongo.ttf',24)
